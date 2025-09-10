@@ -18,11 +18,13 @@ disPatch(decrement())
 
   return (
 
-    <div>
+    <div className='bg-gray-400 h-screen'>
 
-        <button onClick={handleIncrement}>+</button>
-        <div>{data}</div>
-        <button onClick={handleDecrement}>-</button>
+        <div className='flex justify-center items-center gap-5 pt-60'>
+            <button className='text-5xl border px-10 py-4 bg-yellow-100' onClick={handleIncrement}>+</button>
+        <div className='text-7xl'>{data}</div>
+        <button className='text-6xl border px-10 py-3 bg-yellow-100' onClick={handleDecrement}>-</button>
+        </div>
     </div>
   )
 }
